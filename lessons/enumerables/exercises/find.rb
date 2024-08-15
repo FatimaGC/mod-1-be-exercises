@@ -5,10 +5,26 @@ def find_first_long_named_sister
     sisters = ["Rose", "Kathleen", "Eunice", "Patricia", "Jean"]
   
     ### YOUR CODE HERE
+    sisters.each do |sister|
+        return sister if sister.length > 4
+    end 
+        
+    sister 
 
     # should return "Kathleen"
 end
 
+p find_first_long_named_sister
 
+#REFACTORING WITH FIND 
+
+def find_first_long_named_sister
+  sisters = ["Rose", "Kathleen", "Eunice", "Patricia", "Jean"]
+
+  sisters.find do |sister|
+    sister.length > 4
+  end
+
+end 
 
 p find_first_long_named_sister
