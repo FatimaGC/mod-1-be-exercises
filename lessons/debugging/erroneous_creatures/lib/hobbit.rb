@@ -1,3 +1,4 @@
+require 'pry'
 class Hobbit
 
   attr_reader :name, :disposition
@@ -15,10 +16,11 @@ class Hobbit
   end
 
   def adult?
-    @agee >= 32
+    @age > 32
   end
 
   def play
+    
     if adult?
       false
     else

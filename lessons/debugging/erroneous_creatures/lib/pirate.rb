@@ -1,3 +1,5 @@
+require 'pry'
+
 class Pirate
   attr_reader :name, :patch
   attr_accessor :job, :cursed
@@ -10,11 +12,12 @@ class Pirate
   end
 
   def cursed?
+    # binding.pry
     @cursed >= 3
   end
 
   def commit_heinous_act
-    @cursed + 1
+    @cursed += 1
   end
 
   def say(x)

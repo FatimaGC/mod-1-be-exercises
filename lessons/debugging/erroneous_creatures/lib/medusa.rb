@@ -9,11 +9,13 @@ class Medusa
   end
 
   def stare(x)
+    # require 'pry'; binding.pry
     x.stone = true
-    @statues = x
+    @statues.push(x.name)
   end
 
   def statues
+    # require 'pry'; binding.pry
     @statues
   end
 

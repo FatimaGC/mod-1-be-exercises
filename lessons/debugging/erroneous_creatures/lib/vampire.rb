@@ -1,3 +1,5 @@
+require 'pry'
+
 class Vampire
 
   attr_reader :name
@@ -10,8 +12,9 @@ class Vampire
     @cape_color = cape_color
   end
 
-  def thirsty
-    @thirstiness
+  def thirsty?
+    @thirstiness 
+    binding.pry
   end
 
   def drink

@@ -9,7 +9,8 @@ class Wizard
   end
 
   def bearded?
-    @bearded
+  # require 'pry'; binding.pry
+    bearded[:bearded]
   end
 
   def incantation(x)
